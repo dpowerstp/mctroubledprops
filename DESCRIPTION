@@ -1,0 +1,20 @@
+Package: mctroubledproperties
+Title: Processes and Visualizes Montgomery County Troubled Properties Data
+Version: 0.0.0.9000
+Authors@R: 
+    person("Dan", "Powers", , "danielp@takomaparkmd.gov", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Functions for processing and visualizing Montgomery County troubled properties data in leaflet maps.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    dplyr,
+    glue,
+    leaflet,
+    leafletwrappers,
+    magrittr,
+    sf,
+    stringr,
+    tidygeocoder
