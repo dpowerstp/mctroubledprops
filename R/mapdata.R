@@ -48,7 +48,7 @@ Severity Index: {severityindex}<p></p>
 #'
 #' @examples
 color_rating <- function(){
-  leaflet::colorFactor(c("#85ffb1", "#ffcc00", "#fa8484", "#fff0f0"), c("Compliant", "At-Risk", "Troubled", "Tbd"))
+  leaflet::colorFactor(c("#85ffb1", "#ffcc00", "#fa8484", "#fff0f0"), c("Compliant", "At-Risk", "Troubled", "Tbd"), ordered = T)
 }
 
 

@@ -16,6 +16,7 @@ read_fix_mc <- function(apptoken){
     sf::st_transform(4326) %>%
     dplyr::mutate(inspectedtimely = dplyr::case_when(compliantind == 1 ~ "Yes",
                                        compliantind == 0 ~ "No"),
+                  city = gsub("Silever", "Silver", city, ignore.case = T),
            rating = stringr::str_to_title(rating),
            rating = factor(rating, c("Compliant", "At-Risk", "Troubled", "Tbd")))  %>%
     dplyr::mutate(
